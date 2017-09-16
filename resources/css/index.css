@@ -1,0 +1,274 @@
+/* latin */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* latin */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* Global Values*/
+
+html, body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: rgb(112, 112, 112);
+  line-height: 150%;
+}
+
+h2 {
+    color: rgb(112, 112, 112);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+/*
+.logo img {
+  border-radius: 50%;
+  border: thin solid black;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  background-color: white;
+  margin: 2rem;
+}
+*/
+
+/* Header */
+
+.header {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: thin black solid;
+  transition: all 1s ease-out;
+}
+
+.header:hover {
+  padding: 1rem 0rem;
+}
+
+.logo span {
+  color: black;
+}
+
+.logo img, .logo h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.logo img {
+  padding-left: 2rem;
+}
+
+.navigation {
+  padding-right: 2rem;
+}
+
+a.link {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+a.link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Section 1 */
+
+.banner {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 100%;
+  height: 750px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content span {
+  color: black;
+}
+
+.learn-everyday {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 36%;
+  font-weight: bold;
+  color: white;
+  line-height: normal;
+}
+
+.learn-everyday h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.learn-everyday h3 {
+  font-size: 1rem;
+}
+
+.start {
+  margin: 3rem 0rem;
+
+}
+.start a {
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+  background-color: rgba(224, 224, 224, 1);
+  border-radius: .5rem;
+  padding: 1rem 5rem;
+}
+
+.start a:hover {
+  background-color: rgba(255, 215, 000, 1);
+  color: white;
+}
+
+/* Section 2 */
+
+.section-2 {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.information.column {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.information.column img {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+}
+
+.text p {
+  padding-top: 2rem;
+}
+
+.text h5 {
+  font-size: 0.75rem;
+  padding: 1rem 0rem;
+}
+
+.info-boxes {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.info img {
+  width: 35%;
+  height: 35%;
+}
+
+.info {
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+.info:hover {
+  background-color: rgba(224, 224, 224, 1);
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+/* Section 3 */
+.section-3 {
+  background-color: rgba(224, 224, 224, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 4.5rem;
+}
+
+.course {
+  background-color: white;
+  width: 30%;
+}
+
+.course a {
+  text-decoration: none;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Section 4 */
+
+.video video {
+  width: 60%;
+  height: auto;
+}
+
+@media only screen and (min-width:1024px) {
+  div.mobile {
+    display: none;
+  }
+}
