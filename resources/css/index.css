@@ -36,6 +36,18 @@ h2 {
     padding-top: 2rem;
 }
 
+h4 {
+  color: rgb(112, 112, 112);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+  padding: 1rem 0rem;
+}
+
 /*
 .logo img {
   border-radius: 50%;
@@ -52,19 +64,19 @@ h2 {
 
 .header {
   position: fixed;
-  background-color: white;
+  background-color: rgba(255,255,255, 0.5);
   top: 0px;
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: thin black solid;
   transition: all 1s ease-out;
 }
 
 .header:hover {
-  padding: 1rem 0rem;
+  padding: .5rem 0rem;
+  background-color: rgba(255,255,255,1);
 }
 
 .logo span {
@@ -104,7 +116,7 @@ a.link:before {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 750ms linear 0s;
 }
 
 a.link:hover:before {
@@ -122,7 +134,6 @@ a.link:hover:before {
   background-color: rgba(255, 255, 255, 0.2);
   max-width: 100%;
   height: 750px;
-  margin-top: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -140,14 +151,14 @@ a.link:hover:before {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 36%;
+  width: 39%;
   font-weight: bold;
   color: white;
   line-height: normal;
 }
 
 .learn-everyday h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   padding-bottom: 1rem;
 }
 
@@ -200,9 +211,9 @@ a.link:hover:before {
   padding-top: 2rem;
 }
 
-.text h5 {
+a h5 {
   font-size: 0.75rem;
-  padding: 1rem 0rem;
+  padding: .5rem 0rem;
 }
 
 .info-boxes {
@@ -227,8 +238,12 @@ a.link:hover:before {
 .date-time {
   display: flex;
   flex-direction: column;
-  width: 65%;
+justify-content: center;
+width: 65%;
+  padding-left: 1rem;
 }
+
+
 
 /* Section 3 */
 .section-3 {
@@ -248,6 +263,7 @@ a.link:hover:before {
 .course {
   background-color: white;
   width: 30%;
+  margin: 1rem 1rem;
 }
 
 .course a {
@@ -262,9 +278,50 @@ a.link:hover:before {
 
 /* Section 4 */
 
-.video video {
+.heading {
+  text-align: center;
+}
+.thesis {
+  display: flex;
+  justify-content: center;
+}
+
+.thesis-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1rem 0rem;
+}
+
+.thesis-info {
+  display: flex;
+  align-items: center;
+}
+
+.thesis-info:hover {
+  background-color: rgba(224, 224, 224, 1);
+}
+
+.thesis-info img {
+  width: 35%;
+  height:auto;
+  padding: 1rem 1rem;
+}
+
+.urban-text {
   width: 60%;
+}
+.video {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+.video video {
+  width: 100%;
   height: auto;
+}
+
+.thesis-text {
+  width: 65%;
 }
 
 @media only screen and (min-width:1024px) {
