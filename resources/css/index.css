@@ -30,10 +30,10 @@ html, body {
 }
 
 h2 {
-    color: rgb(112, 112, 112);
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 2rem;
+  color: rgb(112, 112, 112);
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
 }
 
 h4 {
@@ -48,6 +48,7 @@ h5 {
   padding: 1rem 0rem;
 }
 
+
 /*
 .logo img {
   border-radius: 50%;
@@ -60,11 +61,12 @@ h5 {
 }
 */
 
+
 /* Header */
 
 .header {
   position: fixed;
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   top: 0px;
   width: 100%;
   height: 3rem;
@@ -76,7 +78,7 @@ h5 {
 
 .header:hover {
   padding: .5rem 0rem;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .logo span {
@@ -125,6 +127,7 @@ a.link:hover:before {
   transform: scaleX(1);
 }
 
+
 /* Section 1 */
 
 .banner {
@@ -168,8 +171,8 @@ a.link:hover:before {
 
 .start {
   margin: 3rem 0rem;
-
 }
+
 .start a {
   color: rgb(112, 112, 112);
   text-decoration: none;
@@ -182,6 +185,7 @@ a.link:hover:before {
   background-color: rgba(255, 215, 000, 1);
   color: white;
 }
+
 
 /* Section 2 */
 
@@ -238,14 +242,14 @@ a h5 {
 .date-time {
   display: flex;
   flex-direction: column;
-justify-content: center;
-width: 65%;
+  justify-content: center;
+  width: 65%;
   padding-left: 1rem;
 }
 
 
-
 /* Section 3 */
+
 .section-3 {
   background-color: rgba(224, 224, 224, 1);
   display: flex;
@@ -275,12 +279,17 @@ width: 65%;
   height: auto;
 }
 
+.blurb {
+  padding-left: 1rem;
+}
+
 
 /* Section 4 */
 
 .heading {
   text-align: center;
 }
+
 .thesis {
   display: flex;
   justify-content: center;
@@ -304,17 +313,24 @@ width: 65%;
 
 .thesis-info img {
   width: 35%;
-  height:auto;
+  height: auto;
   padding: 1rem 1rem;
 }
 
 .urban-text {
-  width: 60%;
+  width: 100%;
+  padding-top: 1.5rem;
 }
+
+.urban-text p {
+  padding-top: 0.5rem;
+}
+
 .video {
   margin: 2rem 1.5rem;
   width: 60%;
 }
+
 .video video {
   width: 100%;
   height: auto;
@@ -324,7 +340,96 @@ width: 65%;
   width: 65%;
 }
 
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-top: thin solid lightgrey;
+}
+
+footer a {
+  font-size: 0.75rem;
+}
+
+.copyright {
+  font-size: 0.75rem;
+}
+
+
+/* Laptop and desktop screens */
 @media only screen and (min-width:1024px) {
+
+}
+
+/* Tablet in landscape */
+@media only screen and (max-width:1024px) {}
+
+
+/* Tablet in portrait */
+@media only screen and (min-width:768px) {
+  .learn-everyday h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  .learn-everyday {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+div.thesis-boxes {
+  display:none;
+}
+.video {
+  width: 100%;
+}
+
+body {
+  font-size: 12px;
+}
+
+.learn-everyday h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.learn-everyday {
+  width: 80%;
+}
+
+.banner {
+  height: 600px;
+}
+
+div.information {
+  display: none;
+}
+
+.info, .date-time {
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-boxes {
+  width: 100%;
+  margin: 0rem;
+}}
+/* Mobile in portrait */
+
+@media only screen and (max-width:480px) {
+  div.course {
+    display: none;
+  }
+  div.navigation, div.logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:480px) {
   div.mobile {
     display: none;
   }
