@@ -49,19 +49,6 @@ h5 {
 }
 
 
-/*
-.logo img {
-  border-radius: 50%;
-  border: thin solid black;
-  height: 3rem;
-  width: 3rem;
-  position: fixed;
-  background-color: white;
-  margin: 2rem;
-}
-*/
-
-
 /* Header */
 
 .header {
@@ -97,6 +84,7 @@ h5 {
 
 .navigation {
   padding-right: 2rem;
+  display: flex;
 }
 
 a.link {
@@ -158,11 +146,12 @@ a.link:hover:before {
   font-weight: bold;
   color: white;
   line-height: normal;
+  padding: 0rem 1rem;
 }
 
 .learn-everyday h1 {
   font-size: 4.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .learn-everyday h3 {
@@ -261,7 +250,7 @@ a h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem 4.5rem;
+  margin: 2rem 1rem;
 }
 
 .course {
@@ -360,77 +349,100 @@ footer a {
 
 
 /* Laptop and desktop screens */
-@media only screen and (min-width:1024px) {
-
-}
-
-/* Tablet in landscape */
-@media only screen and (max-width:1024px) {}
 
 
 /* Tablet in portrait */
-@media only screen and (min-width:768px) {
-  .learn-everyday h1 {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-  }
 
-  .learn-everyday {
-    width: 60%;
+@media only screen and (min-width:768px) {
+  .tablet {
+    display: none;
   }
 }
 
 @media only screen and (max-width:768px) {
-div.thesis-boxes {
-  display:none;
-}
-.video {
-  width: 100%;
+  div.thesis-boxes {
+    display: none;
+  }
+  .video {
+    width: 100%;
+  }
+  .learn-everyday h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .learn-everyday {
+    width: 60%;
+  }
+  .banner {
+    height: 600px;
+  }
+  div.information {
+    display: none;
+  }
+  .info, .date-time {
+    flex-direction: column;
+    align-items: center;
+  }
+  img.tablet {
+    width: 80%;
+  }
+  .desktop {
+    display: none;
+  }
+  .info-boxes {
+    width: 100%;
+    margin: 0rem;
+  }
+
+  .course {
+    width: 45%;
+  }
+
+  .course-boxes {
+    margin: 2rem 0rem;
+  }
 }
 
-body {
-  font-size: 12px;
-}
 
-.learn-everyday h1 {
-  font-size: 3rem;
-  padding-bottom: 1rem;
-}
-
-.learn-everyday {
-  width: 80%;
-}
-
-.banner {
-  height: 600px;
-}
-
-div.information {
-  display: none;
-}
-
-.info, .date-time {
-  flex-direction: column;
-  align-items: center;
-}
-
-.info-boxes {
-  width: 100%;
-  margin: 0rem;
-}}
 /* Mobile in portrait */
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:620px) {
   div.course {
     display: none;
   }
-  div.navigation, div.logo {
+  ul.navigation, div.logo {
     display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 1.5rem;
+  }
+  .section-3 {
+    background-color: white;
+  }
+  .heading {
+    padding-bottom: 1rem;
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .courses li {
+    background-color: rgba(224, 224, 224, 1);
+    width: 90%;
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  .learn-everyday {
+    width: 100%;
   }
 }
 
-@media only screen and (min-width:480px) {
-  div.mobile {
+@media only screen and (min-width:620px) {
+  ul.mobile {
     display: none;
   }
 }
