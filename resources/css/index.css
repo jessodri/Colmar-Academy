@@ -367,33 +367,22 @@ footer a {
 
 /* Tablet in portrait */
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:769px) {
   .tablet {
     display: none;
   }
 }
 
 @media only screen and (max-width:768px) {
-  div.thesis-boxes {
+  div.thesis-boxes, div.information, img.desktop {
     display: none;
   }
-  .video {
-    width: 100%;
-  }
-  .learn-everyday h1 {
-    font-size: 3rem;
-    padding-bottom: 1rem;
-  }
-  .learn-everyday {
-    width: 100%;
-  }
-
-
   .banner {
     height: 600px;
   }
-  div.information {
-    display: none;
+  .info-boxes {
+    width: 100%;
+    margin: 0rem;
   }
   .info, .date-time {
     flex-direction: column;
@@ -401,32 +390,23 @@ footer a {
   }
   img.tablet {
     width: 80%;
+    padding: 0.5rem 0rem;
   }
-  .desktop {
-    display: none;
-  }
-  .info-boxes {
-    width: 100%;
-    margin: 0rem;
-  }
-
-  .course {
-    width: 45%;
-  }
-
   .course-boxes {
     margin: 2rem 0rem;
   }
+  .course {
+    width: 45%;
+  }
+  .video {
+    width: 100%;
+  }
 }
 
-
-/* Mobile in portrait */
+/* Mobile/small tablet in portrait */
 
 @media only screen and (max-width:620px) {
-  div.course {
-    display: none;
-  }
-  ul.navigation, div.logo {
+  div.course, ul.navigation, div.logo {
     display: none;
   }
   .mobile {
@@ -435,15 +415,11 @@ footer a {
     width: 100%;
     padding: 0rem 1.5rem;
   }
-  .section-3 {
-    background-color: white;
-  }
   .heading {
     padding-bottom: 1rem;
   }
-
-  .section-4 .heading h2 {
-    padding-top: 0rem;
+  .section-3 {
+    background-color: white;
   }
   .courses {
     display: flex;
@@ -456,8 +432,8 @@ footer a {
     margin: 0.5rem;
     padding: 1rem;
   }
-  .learn-everyday {
-    width: 100%;
+  .section-4 .heading h2 {
+    padding-top: 0rem;
   }
 }
 
