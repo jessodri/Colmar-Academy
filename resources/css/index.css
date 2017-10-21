@@ -384,10 +384,17 @@ footer a {
     width: 100%;
     margin: 0rem;
   }
-  .info, .date-time {
+  .info {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 100%;
   }
+
+.date-time {
+  padding: 0rem;
+  width: 80%;
+}
   img.tablet {
     width: 80%;
     padding: 0.5rem 0rem;
@@ -406,7 +413,7 @@ footer a {
 /* Mobile/small tablet in portrait */
 
 @media only screen and (max-width:620px) {
-  div.course, ul.navigation, div.logo {
+  div.course, ul.navigation, div.logo, footer div.links {
     display: none;
   }
   .mobile {
