@@ -220,7 +220,7 @@ a h5 {
   margin-top: 1rem;
 }
 
-.info img {
+.info img.desktop {
   width: 35%;
   height: 35%;
 }
@@ -389,6 +389,7 @@ footer a {
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 1rem 0rem;
   }
 
 .date-time {
