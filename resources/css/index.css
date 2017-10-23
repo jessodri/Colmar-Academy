@@ -303,7 +303,7 @@ a h5 {
   -webkit-box-pack: center;
     -ms-flex-pack: center;
       justify-content: center;
-  margin: 2rem 1rem;
+  margin: 2rem 0rem;
 }
 
 .course {
@@ -418,7 +418,7 @@ footer {
 
 /* Tablet in portrait */
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:769px) {
   .tablet {
     display: none;
   }
@@ -460,7 +460,7 @@ footer {
     margin: 2rem 0rem;
   }
   .course {
-    width: 45%;
+    width: 43%;
   }
   .video {
     width: 100%;
@@ -479,9 +479,9 @@ footer {
         display: flex;
     -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-        justify-content: space-between;
+        justify-content: space-around;
     width: 100%;
-    padding: 0rem 1.5rem;
+    padding: 0rem 0rem;
   }
   .heading {
     padding-bottom: 1rem;
@@ -525,9 +525,23 @@ footer {
     display: none;
   }
 /* extra small devices*/
-  @media only screen and (max-width:375px){
+
+  @media only screen and (max-width:320px){
     .learn-everyday h1 {
-      font-size: 3rem;
+      font-size: 2rem;
+    }
+
+    .learn-everyday h3 {
+      font-size: .7rem;
+    }
+
+    .start {
+      margin: 2rem 0rem;
+    }
+
+    .start a {
+      border-radius: .5rem;
+      padding: .5rem 3rem;
     }
   }
 }
