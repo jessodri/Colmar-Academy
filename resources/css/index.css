@@ -174,7 +174,9 @@ h5 {
 }
 
 .learn-everyday h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-shadow: 4px 4px 5px black;
+
 }
 
 .start {
@@ -416,7 +418,7 @@ footer {
 
 /* Tablet in portrait */
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:768px) {
   .tablet {
     display: none;
   }
@@ -465,7 +467,6 @@ footer {
   }
 }
 
-
 /* Mobile/small tablet in portrait */
 
 @media only screen and (max-width:620px) {
@@ -485,6 +486,7 @@ footer {
   .heading {
     padding-bottom: 1rem;
   }
+
   .section-3 {
     background-color: rgb(255,255,255);
   }
@@ -505,6 +507,13 @@ footer {
     width: 90%;
     margin: 0.5rem;
     padding: 1rem;
+    text-decoration: none;
+  }
+
+  .courses li h4 a {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+
   }
   .section-4 .heading h2 {
     padding-top: 0rem;
@@ -514,5 +523,11 @@ footer {
 @media only screen and (min-width:620px) {
   ul.mobile {
     display: none;
+  }
+/* extra small devices*/
+  @media only screen and (max-width:375px){
+    .learn-everyday h1 {
+      font-size: 3rem;
+    }
   }
 }
